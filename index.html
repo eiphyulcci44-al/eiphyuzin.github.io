@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ei Phyu Zin — Accountant, Finance & Admin professional portfolio">
+<title>Ei Phyu Zin | Finance & Administration</title>
+<style>
+:root{
+ --ink:#182230;--muted:#6b7280;--cream:#f5f2eb;--paper:#fffdf9;
+ --gold:#b68a45;--gold2:#8f692f;--green:#173d35;--line:#e7e0d4;
+ --shadow:0 18px 50px rgba(34,30,24,.10)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.65}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1160px,92%);margin:auto}
+header{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:21px;font-weight:700;letter-spacing:-.03em}.logo small{display:block;font:10px Arial,sans-serif;letter-spacing:.18em;color:var(--gold);text-transform:uppercase}
+.links{display:flex;gap:24px;font:12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#5d6470}.links a:hover{color:var(--gold2)}
+.hero{padding:88px 0;background:var(--paper)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+.label{font:11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);font-weight:800}
+h1{font-size:clamp(48px,7vw,88px);line-height:.95;letter-spacing:-.065em;font-weight:600;margin:18px 0 24px}
+h1 em{font-style:normal;color:var(--green)}
+.hero-text{font-size:18px;color:#59616c;max-width:690px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.btn{font:700 12px Arial,sans-serif;letter-spacing:.03em;padding:13px 17px;border:1px solid #d8d0c4;background:#fff;border-radius:4px;display:inline-flex;align-items:center;gap:7px;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(0,0,0,.08)}
+.btn.dark{background:var(--green);border-color:var(--green);color:#fff}.btn.gold{background:var(--gold);border-color:var(--gold);color:#fff}
+.signature{background:var(--green);color:#fff;padding:36px;border-radius:2px;box-shadow:var(--shadow);position:relative}
+.signature:after{content:"";position:absolute;right:22px;top:22px;width:75px;height:75px;border:1px solid rgba(255,255,255,.25);border-radius:50%}
+.monogram{font:bold 40px Georgia,serif;color:#e4c58d;margin-bottom:28px}
+.signature h2{font-size:29px;font-weight:500;margin:0}.signature p{color:#d4ddd9;font-size:14px}
+.details{border-top:1px solid rgba(255,255,255,.18);margin-top:25px;padding-top:15px;font:12px Arial,sans-serif}.details div{padding:7px 0;display:flex;justify-content:space-between}.details b{color:#e4c58d}
+section{padding:86px 0}.section-head{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;margin-bottom:38px}.eyebrow{font:10px Arial,sans-serif;color:var(--gold2);letter-spacing:.2em;text-transform:uppercase;font-weight:800}
+h2{font-size:40px;line-height:1.05;letter-spacing:-.04em;font-weight:600;margin:6px 0}.section-head p{color:var(--muted);margin:0}
+.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.paper{background:var(--paper);border:1px solid var(--line);padding:30px}.paper h3{font-size:21px;font-weight:600;margin-top:0}
+.stats{display:flex;gap:10px;margin-top:25px}.stat{flex:1;background:#f8f5ee;border:1px solid var(--line);padding:15px}.stat strong{display:block;font-size:26px;color:var(--green)}.stat span{font:10px Arial,sans-serif;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.experience{background:#ebe7de}.job{background:var(--paper);border-left:4px solid var(--gold);padding:26px 30px;margin-bottom:15px;box-shadow:0 5px 18px rgba(40,35,28,.04)}
+.job-head{display:flex;justify-content:space-between;gap:20px}.job h3{font-size:22px;margin:0}.company{color:var(--green);font-weight:700}.date{font:11px Arial,sans-serif;color:var(--gold2);white-space:nowrap;padding-top:6px}.job ul{margin:15px 0 0;padding-left:20px;color:#5d6470;font-size:14px}.job li{margin:6px 0}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.skill{background:var(--paper);border:1px solid var(--line);padding:18px}.skill b{display:block;font-size:15px}.skill span{font:11px Arial,sans-serif;color:var(--muted)}
+.sg{background:var(--green);color:#fff}.sg .section-head p{color:#cbd8d3}.sg .eyebrow{color:#d9b36e}.training{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.train{border:1px solid rgba(255,255,255,.16);padding:23px;background:rgba(255,255,255,.04)}.train h3{margin:0 0 8px;font-size:17px;font-weight:600}.train p{margin:0;color:#cbd8d3;font:13px Arial,sans-serif}
+.contact{background:var(--paper)}.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:45px}.contact-box{background:var(--green);color:#fff;padding:32px}.contact-box h2{color:#fff}.contact-box p{color:#d4ddd9}.contact-links{background:#f8f5ee;border:1px solid var(--line)}.contact-links a{display:block;padding:16px 18px;border-bottom:1px solid var(--line);font:700 12px Arial,sans-serif}.contact-links a:last-child{border-bottom:0}.contact-links a:hover{color:var(--gold2)}
+footer{background:#102c27;color:#b8c6c1;padding:25px 0;font:11px Arial,sans-serif}
+@media(max-width:820px){.links{display:none}.hero-grid,.profile-grid,.contact-grid,.section-head{grid-template-columns:1fr}.skills,.training{grid-template-columns:1fr 1fr}.job-head{flex-direction:column;gap:3px}.date{white-space:normal}}
+@media(max-width:520px){.skills,.training{grid-template-columns:1fr}.stats{flex-direction:column}h2{font-size:33px}}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#home">Ei Phyu Zin<small>Accountant · Finance · Admin</small></a>
+  <div class="links"><a href="#profile">Profile</a><a href="#experience">Experience</a><a href="#skills">Expertise</a><a href="#singapore">Singapore</a><a href="#contact">Contact</a></div>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="label">Professional Portfolio · Singapore</div>
+   <h1>Accounting with <em>precision.</em><br>Administration with purpose.</h1>
+   <p class="hero-text">A responsible and detail-oriented accounting professional with 5 years of experience in accounting and finance, combining practical financial operations with administrative support and Singapore-focused professional training.</p>
+   <div class="actions">
+    <a class="btn dark" href="Ei-Phyu-Zin-Resume.pdf" download>↓ Download Resume</a>
+    <a class="btn gold" href="#contact">Contact Me</a>
+    <a class="btn" href="https://www.linkedin.com/in/eiphyeiph" target="_blank">LinkedIn</a>
+    <a class="btn" href="https://wa.me/6591938948" target="_blank">WhatsApp</a>
+    <a class="btn" href="mailto:eiphyulcci44@gmail.com">Email</a>
+   </div>
+  </div>
+  <aside class="signature">
+   <div class="monogram">EPZ</div>
+   <h2>Ei Phyu Zin</h2>
+   <p>Accountant | Finance | Admin & Related Positions</p>
+   <div class="details">
+    <div><b>Experience</b><span>5 years</span></div>
+    <div><b>ACCA</b><span>Part 1</span></div>
+    <div><b>Availability</b><span>Immediately</span></div>
+    <div><b>Singapore</b><span>Open to opportunities</span></div>
+   </div>
+  </aside>
+ </div>
+</section>
+
+<section id="profile">
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="eyebrow">01 · Profile</div><h2>A dependable finance partner for day-to-day operations.</h2></div>
+   <p>My experience covers full-set accounting, AP/AR, General Ledger, bank reconciliation, financial reporting, closing, payroll, taxation support and office administration.</p>
+  </div>
+  <div class="profile-grid">
+   <article class="paper">
+    <h3>Professional Summary</h3>
+    <p>Responsible and detail-oriented accounting professional with strong capability in financial operations, administrative support and accurate record management. Experienced in maintaining organized documentation, supporting audits and delivering reliable reporting.</p>
+    <div class="stats"><div class="stat"><strong>5</strong><span>Years experience</span></div><div class="stat"><strong>200+</strong><span>Invoices / month</span></div><div class="stat"><strong>100%</strong><span>Bank reconciliation accuracy</span></div></div>
+   </article>
+   <article class="paper">
+    <h3>Education & Qualifications</h3>
+    <p><b>ACCA Global — Part 1</b><br>Association of Chartered Certified Accountants</p>
+    <p><b>Diploma in Accounting and Finance (LCCI Level 3)</b><br>Pearson LCCI · 2019</p>
+    <p><b>Bachelor of Science (B.Sc.)</b><br>University of Magway · 2014–2018</p>
+    <p><b>Additional qualifications:</b> LCCI Level 2 Bookkeeping & Accounts (IAS); Advanced Microsoft Word, Excel, PowerPoint and Outlook in Business Application.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="experience" id="experience">
+ <div class="wrap">
+  <div class="section-head">
+   <div><div class="eyebrow">02 · Experience</div><h2>Professional history</h2></div>
+   <p>Progressive responsibility across accounting, finance operations and administration.</p>
+  </div>
+  <article class="job">
+   <div class="job-head"><div><h3>Accountant</h3><div class="company">Synergy Plus Consulting Service Co., Ltd · Myanmar</div></div><div class="date">Aug 2024 – Mar 2025</div></div>
+   <ul><li>Handled full set of accounts including Accounts Receivable, Accounts Payable and General Ledger.</li><li>Liaised with banks on payment and receipt matters and performed daily bank reconciliations.</li><li>Managed monthly staff claims, payments, receipts and journal entries.</li><li>Completed month-end closing within tight deadlines while maintaining reconciliation accuracy.</li><li>Maintained audit documentation; issued sales orders, invoices, receipts and monthly Statements of Account.</li><li>Facilitated tax submissions and quarterly Commercial Tax reporting.</li></ul>
+  </article>
+  <article class="job">
+   <div class="job-head"><div><h3>Junior Accountant</h3><div class="company">PIL Myanmar Co., Ltd · Myanmar</div></div><div class="date">Feb 2023 – Jul 2024</div></div>
+   <ul><li>Documented and maintained day-to-day financial transactions in the accounting system.</li><li>Prepared and verified vouchers, invoices, receipts and payment documents.</li></ul>
+  </article>
+  <article class="job">
+   <div class="job-head"><div><h3>Accounts & Administrative</h3><div class="company">T Fitness Health Co., Ltd · Myanmar</div></div><div class="date">Mar 2021 – Feb 2023</div></div>
+   <ul><li>Recorded daily sales, expenses and bookkeeping records and supervised customer invoicing.</li><li>Checked customer receipts against outstanding invoices and maintained cash book and bank reconciliations.</li><li>Administered employee leave, monthly payroll, staff claims and cash disbursements.</li><li>Maintained filing systems and handled routine administration, stationery and office supplies.</li></ul>
+  </article>
+ </div>
+</section>
+
+<section id="skills">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">03 · Expertise</div><h2>Finance & administration toolkit</h2></div><p>Core capabilities presented in a recruiter-friendly format for Accounts, Finance cum Admin roles.</p></div>
+  <div class="skills">
+   <div class="skill"><b>Full Set of Accounts</b><span>AP · AR · Cash/Bank · Tax · GL</span></div>
+   <div class="skill"><b>Reconciliation</b><span>Bank statements · company accounts</span></div>
+   <div class="skill"><b>Financial Reporting</b><span>Balance Sheet · P&L · Trial Balance</span></div>
+   <div class="skill"><b>Tax & Compliance</b><span>GST · ECI · Form C/Cs</span></div>
+   <div class="skill"><b>Payroll & CPF</b><span>Payroll calculation · CPF knowledge</span></div>
+   <div class="skill"><b>Closing</b><span>Month-end · Year-end · Journal entries</span></div>
+   <div class="skill"><b>Accounting Software</b><span>Xero · QuickBooks · MYOB · ERP</span></div>
+   <div class="skill"><b>Microsoft Excel</b><span>Pivot Tables · VLOOKUP · XLOOKUP</span></div>
+   <div class="skill"><b>Administration</b><span>Filing · documentation · office support</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="sg" id="singapore">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">04 · Singapore Edge</div><h2>Singapore Professional Account & Admin Training</h2></div><p>2026 online job training through SingAcc Professional Services Pte Ltd, covering Singapore-relevant accounting, tax, payroll and employment administration topics.</p></div>
+  <div class="training">
+   <div class="train"><h3>GST Return</h3><p>Submission of quarterly GST Return.</p></div>
+   <div class="train"><h3>ECI & Corporate Tax</h3><p>ECI and Corporate Income Tax Return coursework.</p></div>
+   <div class="train"><h3>Full Set of Accounts</h3><p>AP, AR, Cash/Bank, Taxation and GL.</p></div>
+   <div class="train"><h3>Payroll & CPF</h3><p>Payroll calculation and CPF knowledge.</p></div>
+   <div class="train"><h3>MOM Applications</h3><p>S Pass and Work Permit application coursework.</p></div>
+   <div class="train"><h3>Audit & Reporting</h3><p>Auditor support and Balance Sheet, P&L and Trial Balance reporting.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">05 · Achievements</div><h2>Accuracy is part of the process.</h2></div></div>
+  <div class="profile-grid">
+   <article class="paper"><h3>100% Month-End Accuracy</h3><p>Improved month-end closing efficiency with 100% accuracy.</p></article>
+   <article class="paper"><h3>200+ Monthly Invoices</h3><p>Processed over 200 customer invoices monthly with accurate and timely billing.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap contact-grid">
+  <div class="contact-box">
+   <div class="eyebrow">06 · Contact</div>
+   <h2>Let's discuss the right opportunity.</h2>
+   <p>Available immediately for Accounts, Finance cum Admin and related positions in Singapore.</p>
+   <div class="actions"><a class="btn gold" href="mailto:eiphyulcci44@gmail.com">Email Me</a><a class="btn" style="background:#fff" href="https://wa.me/6591938948" target="_blank">WhatsApp</a></div>
+  </div>
+  <div class="contact-links">
+   <a href="mailto:eiphyulcci44@gmail.com">✉ &nbsp; eiphyulcci44@gmail.com</a>
+   <a href="https://wa.me/6591938948" target="_blank">◉ &nbsp; +65 9193 8948</a>
+   <a href="https://www.linkedin.com/in/eiphyeiph" target="_blank">in &nbsp; LinkedIn Profile</a>
+   <a href="Ei-Phyu-Zin-Resume.pdf" download>↓ &nbsp; Download Resume PDF</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Ei Phyu Zin · Accountant · Finance · Admin · Singapore</div></footer>
+</body>
+</html>
